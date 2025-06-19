@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage ('Run Docker')
+    stage('Run Docker') {
       steps {
         bat 'docker run --rm alpine echo Hello'
       }
+    }
   }
-}
 }
